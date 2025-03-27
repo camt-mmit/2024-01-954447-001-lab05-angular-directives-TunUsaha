@@ -1,0 +1,12 @@
+<div class="dynamic-input">
+  <label>
+    Input {{ index }}:
+    <input
+      type="number"
+      [value]="value"
+      (input)="onValueChange($event)"
+      placeholder="Enter a number"
+    />
+  </label>
+  <button class="remove" (click)="onRemove()">🗑 Remove</button>
+</div>
